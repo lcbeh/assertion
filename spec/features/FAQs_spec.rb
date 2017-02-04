@@ -1,4 +1,5 @@
 feature 'FAQs page' do
+  include Helpers
 
   scenario "User finds FAQs page" do
     go_to_dca_website
@@ -7,13 +8,10 @@ feature 'FAQs page' do
     then_I_see_FAQs_page
   end
 
-  def go_to_dca_website
-    visit "/"
-  end
-
   def and_click_on_what_we_do
     #scroll to the middle section of the page
     page.execute_script("window.scrollTo(0, 2000)")
+
     within("section.block-what-we-do") do
       click_link("What we do")
     end
@@ -22,6 +20,7 @@ feature 'FAQs page' do
   def and_click_on_FAQs
     #scroll to the bottom section of the page
     page.execute_script("window.scrollTo(0, 5000)")
+
     within("footer.footer") do
       click_link("FAQs")
     end

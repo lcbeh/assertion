@@ -21,6 +21,7 @@ require 'capybara'
 require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'rspec'
+require_relative 'helpers/helper_methods'
 
 Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => :chrome)
