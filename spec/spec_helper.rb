@@ -16,6 +16,20 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+
+require 'capybara'
+require 'capybara/rspec'
+require 'selenium-webdriver'
+require 'rspec'
+
+Capybara.register_driver :selenium do |app|
+  Capybara::Selenium::Driver.new(app, :browser => :chrome)
+end
+
+Capybara.run_server = false
+Capybara.default_driver = :selenium
+Capybara.app_host = 'https://doctorcareanywhere.com/'
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
