@@ -1,4 +1,4 @@
-# Assertion 
+# Assertion
 
 Write a piece of code to validate the assertion, any tool can be used but the  suggestion is to go with Capybara/Ruby.
 
@@ -15,7 +15,14 @@ Then I see FAQs page
 ``` git clone https...```  
 
 2. Access the folder  
-``` cd Folder ```
+``` cd assertion ```
 
 3. Install dependencies  
-``` bundle install```
+``` bundle install```  
+
+## Test
+
+To run tests:  
+```rspec ```
+
+![](Test_result.png)
