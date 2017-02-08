@@ -8,6 +8,7 @@ feature 'FAQs page' do
     then_I_see_FAQs_page
   end
 
+
   def and_click_on_what_we_do
     #scroll to the middle section of the page
     page.execute_script("window.scrollTo(0, 2000)")

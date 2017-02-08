@@ -1,6 +1,6 @@
 # Assertion
 
-Write a piece of code to validate the assertion, any tool can be used but the  suggestion is to go with Capybara/Ruby.
+Write a piece of code to validate the assertion, any tool can be used but the suggestion is to go with Capybara/Ruby.
 
 ```
 As a user when I go to https://doctorcareanywhere.com/
@@ -12,7 +12,7 @@ Then I see FAQs page
 ## Installation
 
 1. Clone this repo  
-``` git clone https...```  
+``` git clone git@github.com:lcbeh/assertion.git```  
 
 2. Access the folder  
 ``` cd assertion ```
